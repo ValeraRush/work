@@ -1,4 +1,12 @@
-function func(arr) { // .... }
-     const elements = [4, 6, 2, 7, 8, 4] ];
-conts result = fucn(elements);
-console.log(result); // Выводит 6
+let array = [3,4,3,42,34,5,6,754,4];
+
+TestFunction = (arr, val) => {
+     array.forEach((value, index) => {
+          if(value === val){
+               console.log(value)
+          }
+     });
+
+}
+
+console.log(TestFunction(array));
