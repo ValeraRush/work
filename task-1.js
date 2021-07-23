@@ -1,5 +1,10 @@
-function func(arr) { // .... }
-     const elements = [4, 6, 2, 7, 8, 4] ];
-conts result = fucn(elements);
-console.log(result); // Выводит 6
+let array=[4,34,4,232,4,24,4,5,235,4];
+lengthFunction=(arr)=>{
+     let count=0;
+     array.forEach((value,index) =>{
+          count=index+1
+     });
+     return count;
 }
+const t=lengthFunction(array);
+console.log(t)
