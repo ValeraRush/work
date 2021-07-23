@@ -1,12 +1,11 @@
 let array = [3,4,3,42,34,5,6,754,4];
 
 TestFunction = (arr, val) => {
-     array.forEach((value, index) => {
-          if(value === val){
-               console.log(value)
-          }
-     });
-
+    let count=0;
+    array.forEach((value,index) => {
+        count = index+1;
+    });
+    return count;
 }
-
-console.log(TestFunction(array));
+const t = TestFunction(array)
+console.log(t)
