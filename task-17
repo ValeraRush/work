@@ -1,0 +1,52 @@
+let collectionArr = [
+    {
+        name: 'Ivan',
+        age: 21,
+        town: 'Spb'
+    },
+    {
+        name: 'Vladimir',
+        age: 21,
+        town: 'Samara'
+    },
+    {
+        name: 'Ivan',
+        age: 41,
+        town: 'Spb'
+    },
+    {
+        name: 'Vita',
+        age: 21,
+        town: 'Shahty'
+    },
+    {
+        name: 'Valera',
+        age: 21,
+        town: 'Spb'
+    },
+    {
+        name: 'Valera',
+        age: 21,
+        town: 'Spb'
+    }
+];
+
+
+let testFunction = (arr,val) => {
+	let newArray=[]
+        collectionArr.forEach(elem => {
+        if(elem.age === val)
+			newArray.push(elem)
+            
+    })
+	if(newArray.length>0)
+    return ('Exist')
+	else{
+		return 'No Exist'
+	}
+	
+}
+
+const t = testFunction(collectionArr,21);
+console.log(t)
+
