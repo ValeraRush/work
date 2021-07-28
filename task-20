@@ -1,0 +1,10 @@
+let array = [1,2,3,4,5,6]
+function moveElement(arr,from,to){
+	let elem=arr[to]
+arr[to]=arr[from]
+	arr[from]=elem
+	return arr
+	
+}
+
+console.log(moveElement(array,1,4))
