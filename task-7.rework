@@ -1,0 +1,10 @@
+let arr = [4, 3, 2, 1, 4, 6, 7, 8, 9, 3, 4, 7, 9, 2, 4, 4, 6, 6, 6, 6, 6];
+let testFunction = (arr, elem1,elem2) => {
+    return arr.filter(function(elem){
+		return elem===elem1||elem===elem2
+	})
+
+}
+
+
+console.log(testFunction(arr,3,1))
