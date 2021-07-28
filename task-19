@@ -1,0 +1,9 @@
+let array = [NaN, 0, 77, false, -17, '',undefined, 99, null];
+
+function filterFalse(arr) {
+  return arr.filter(function(item) { 
+	  return item
+  });
+}
+
+console.log(filterFalse(array));
