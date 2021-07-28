@@ -1,0 +1,35 @@
+let collectionArr = [
+    {
+        name: 'Ivan',
+        age: 24,
+    },
+    {
+        name: 'Vladimir',
+        age: 23
+    },
+    {
+        name: 'Ivan',
+        age: 24
+    },
+    {
+        name: 'Vita',
+        age: '56'
+    },
+    {
+        name: 'Valera',
+        age: 21
+    },
+    {
+        name: 'Valera',
+        age: 21
+    }
+];
+let testFunction
+testFunction = (arr, val, val2) => {
+   return arr.filter(value => {
+        return value.name === val || value.age === val2
+            
+        
+    });
+}
+console.log(testFunction(collectionArr, 'Valera', 21));
