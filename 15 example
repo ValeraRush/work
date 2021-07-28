@@ -1,0 +1,20 @@
+let arr = [-1, -2, -3, 1, 2, 3, 4, 5, 6, 7, 8, 9, 20, 30, -50];
+let max = 0
+let min = 0
+let testFunction = (arr) => {
+    
+
+    arr.forEach(value => {
+        if (value < min) {
+            min = value
+			
+			 
+        }
+		if (value > max)
+			max=value
+    })
+    
+}
+testFunction(arr)
+
+console.log('max='+max+' min='+min )
