@@ -1,0 +1,9 @@
+//Напишите функцию moveElement(arr,from,to), которая позволяет поменять местами элементы из позиции from в позицию to.
+let arr=[1,2,3,4,5,6,7,8,9]
+moveElement = (arr, from, to) => {
+    let test =arr.splice(from,1,arr[to])
+    arr.splice(to,1,test[0])
+    return arr
+}
+
+console.log(moveElement(arr, 0, 5))
