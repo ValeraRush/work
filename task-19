@@ -1,3 +1,4 @@
+//В функцию передаем массив. Нужно вернуть массив, в котором отсутствуют ложные значения
 let array = [NaN, 0, 77, false, -17, '',undefined, 99, null];
 
 function filterFalse(arr) {
