@@ -1,0 +1,24 @@
+//Написать функцию, которая принимает 2 аргумента: объект (с минимум двумя полями) и массив с объектами. Необходимо вывести массив объектов, в котором все объекты совпадают с объектом первого аргумента функции
+function Person(name, age, sex) {
+  this.name = name;
+  this.age = age;
+  this.sex = sex;
+}
+let obj=[
+	
+	new Person("Rand McKinnon", 33, "M" ),
+    new Person("Ken Jones", 39, "M"),
+
+ ];
+let objects=new Person("Rand McKinnon", 33, "M" )
+	
+		let testFunction = (arr,obj) => {
+    return arr.filter(elem=> 
+		compareFunction(obj,elem))
+		
+}
+
+compareFunction=(obj2,obj1)=>{
+	return obj2.name==obj1.name && obj2.age==obj1.age && obj2.sex==obj1.sex
+}
+console.log(testFunction(obj,objects))
