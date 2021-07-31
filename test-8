@@ -1,0 +1,15 @@
+//Написать функцию, которая параметрами принимает: массив элементов, 1-е значение, 2-е значение. Вернуть массив значений, которые больше 1-го параметра и меньше 2-го.
+
+let arr=[1,2,3,4,5,6,7,8,9,10]
+ testFunction=(arr,min,max)=>{
+	let newArray=[]	
+	 arr.forEach(elem1=>{
+		 if(elem1>min && elem1<max)
+			newArray.push(elem1) 
+		 
+})
+	return newArray
+}
+	
+
+console.log(testFunction(arr,1,7))
