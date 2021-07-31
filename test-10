@@ -1,0 +1,17 @@
+//Написать функцию, которая параметром принимает массив элементов. Отобрать массив с четными элементами. Вернуть массив со значениями, которые отсутствуют в получившемся массиве.
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+testFunction = (arr) => {
+	let newArray = arr.filter(elem =>
+        elem % 2 === 0)
+     return arr.filter(elem=>{
+		 let find=false
+		 newArray.forEach(elem1=>{
+			 if(elem===elem1)
+				 find=true
+		 })
+		 return !find
+	 })
+
+
+}
+console.log(testFunction(arr))
