@@ -1,0 +1,9 @@
+//Написать функцию, которая параметром принимает массив элементов. Функция возвращает true, если хотя бы 1 элемент отрицательный, иначе false. И вернуть массив этих значений.
+let arr = [1, 2, 3, 4, 5, 6, 7, -8, 9, 10]
+testFunction = (arr)=>{
+return arr.filter(elem1 => {
+	return elem1 > 0
+}).length < arr.length 
+	
+}
+console.log(testFunction(arr))
