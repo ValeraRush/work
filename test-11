@@ -1,0 +1,20 @@
+//Написать функцию, которая параметром принимает массив. Отобрать массив с положительными значениями. Вернуть массив со значениями, которые отсутствуют в получившемся массиве.
+let array = [NaN, 0, 77, false, -17, '',undefined, 99, null];
+
+function filterFalse(arr) {
+  
+	  let newArray= arr.filter(function(item) { 
+	  return item
+	  })
+	     arr=arr.filter(elem => {
+		 let find=false
+		 newArray.forEach(elem1 =>{
+			 if(elem===elem1)
+				 find=true
+  })
+			return !find
+})
+	return arr
+}
+					  
+console.log(filterFalse(array));
