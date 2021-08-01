@@ -1,0 +1,16 @@
+//Написать функцию, которая параметром принимает массив объектов и строку(свойство). Функция возвращает true,если в массиве есть объект с этим свойством, иначе false.
+
+let obj = [
+    {
+        name: 'Ivan',
+        age: 21,
+        town: 'Spb'
+    }
+	];
+testFunction=(arr,elem)=>{
+return arr.filter(elem1=>{
+	return elem===elem1.name 	
+}).length>0
+
+}
+console.log(testFunction(obj,'Ivan'))
