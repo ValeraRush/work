@@ -1,0 +1,19 @@
+//3. Дана строка. Если символы в ней упорядочены по алфавиту, то вывести 'yes', иначе 'no'.
+let arr = 'abcd'
+function alphabetSymbols(str){
+	let find=false
+ for (let i = 0; i < str.length-1; i++) {
+if(str.charAt(i)>str.charAt(i+1))
+{find=true
+break}
+	
+}
+if(!find)
+	return 'Yes'
+	else
+		return 'No'
+	
+
+	
+}
+console.log(alphabetSymbols(arr))
