@@ -1,0 +1,22 @@
+//4. Дана строка. 
+//Вывести первые три символа и последний три символа,
+//если длина строки больше 5.
+//Иначе вывести первый символ столько раз, 
+//какова длина строки.
+let arr = 'abcd'
+function alphabetSymbols(str){
+	let stroka=''
+if(str.length>5){
+stroka = str.slice(0,3)
+	stroka+=str.slice(str.length-3,str.length)	
+}
+	else {
+				for(let i = 0;i<str.length;i++){
+			stroka+=str [0]
+		}
+		
+	}
+	return stroka
+	
+}
+console.log(alphabetSymbols(arr))
