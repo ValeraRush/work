@@ -1,0 +1,9 @@
+//6. Удалить из массива значение с конкретным индексом
+let array = [2, 5, 9,2,5,7,8,9,0,7,6];
+testFunction=(arr,elem)=>{
+if (elem > -1) {
+  arr.splice(elem, 1);
+}
+return arr
+}
+console.log(testFunction(array,8)); 
