@@ -1,0 +1,40 @@
+// Создайте поисковое поле для браузеров Chrome и Safari как показано на рисунке Picture 5.png, имеющее следующее поведение.
+//Если поле не активно, в нем отображается текст, при вводе значения текст внутри поля исчезает. При наборе текст отображается красным цветом.
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div class="type">
+    <div class="main-div">
+        <input type="search" placeholder="Введите текст для поиска" style="outline-color: blue">
+        <button value="search"> Искать</button>
+    </div>
+    <input type="search" placeholder="Введите текст для поиска" style="outline-color: blue">
+    <button value="search"> Искать</button>
+</div>
+<style>
+    .main-div {
+        display: flex;
+        display: block;
+        margin: 8px;
+        padding: 10px;
+        text-align: center;
+    }
+    .type {
+        display: flex;
+        display: block;
+        margin: 8px;
+        padding: 10px;
+
+        text-align: center;
+    }
+    input[type="search"] {
+        width: 190px;
+        color: red;
+    }
+
+
+</style>
+</body>
+</html>
