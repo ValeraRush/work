@@ -1,0 +1,7 @@
+//Обрезать строку по определенному кол-ву символов,
+//добавив в конце '...'
+let str = 'text education part 2'
+testFunction=(arr,elem)=>{
+return arr.substr(0, elem)+'...'
+	}
+console.log(testFunction(str,6))
