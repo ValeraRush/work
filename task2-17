@@ -1,0 +1,15 @@
+//17. Вернуть массив тех значений, которые есть и в первом и во втором
+let arr = [2, 2, 2, 2, 2, 3, 4, 4, 4, 5]
+let arr1 = [2, 2, 2, 2, 2, 3, 4, 4, 4, 5]
+testFunction = (arr,arr1, elem) => {
+    let newArray = []
+    arr.forEach(elem1 => {
+        if (elem1 === elem)
+            newArray.push(elem)
+
+
+    })
+    return newArray
+
+}
+console.log(testFunction(arr,arr1, 4))
