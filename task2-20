@@ -1,0 +1,16 @@
+ //Проверьте, что строка начинается на http://.
+let text = 'http://www.figma.com'
+testFunction = (arr) => {   
+	let newArray=arr.split('www')
+    for (let i = 0; i < arr.length; i++) {
+        if (newArray[i] === 'http://')
+            
+			return true
+
+
+    }
+
+    return false
+}
+
+console.log(testFunction(text))
