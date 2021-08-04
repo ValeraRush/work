@@ -1,0 +1,19 @@
+//Сгруппировать объекты заказов по имени
+let arr = [
+    {name: 'test', price: 200},
+    {name: 'test1', price: 300},
+    {name: 'test', price: 100},
+    {name: 'test', price: 600}
+];
+let finalArr = arr.reduce((m, o) => {
+    let found = m.find(p => p.name === o.name);
+    if (found) {
+        found.price += o.price;
+
+    } else {
+        m.push(o);
+    }
+    return m;
+}, []);
+
+console.log(finalArr);
