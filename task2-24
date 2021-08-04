@@ -1,0 +1,14 @@
+//24. Дана строка. Определить, содержит ли строка только символы 'a', 'b', 'c' или нет.
+let text = 'abc'
+testFunction = (arr) => {
+    let newArray = arr.split('')
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== 'a' && arr[i] !== 'b' && arr[i] !== 'c')
+            return false
+
+    }
+
+    return true
+}
+
+console.log(testFunction(text))
