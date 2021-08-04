@@ -1,0 +1,13 @@
+//Заполните массив следующим образом: в первый элемент запишите 'x', во второй 'xx', в третий 'xxx' и так далее.
+let arr = [];
+testFunction = (arr) => {
+
+    str = 'x';
+    for (let i = 0; i < 10; i++) {
+        arr.push(str);
+        str = str + 'x';
+
+    }
+    return arr
+}
+console.log(testFunction(arr));
