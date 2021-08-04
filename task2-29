@@ -1,0 +1,15 @@
+//Вернуть массив ключей объекта
+let obj=
+{
+name: 'test',
+age: 34,
+country: 'RF'
+}
+
+testFunction=(arr)=>{
+	let newArray=[]
+newArray.push(Object.keys(arr))
+return newArray	
+}
+console.log(testFunction(obj))
+					
