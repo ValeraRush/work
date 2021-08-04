@@ -1,0 +1,17 @@
+//Дана строка. Если она начинается на 'abc',
+//то заменить их на 'www', иначе добавить
+//в конец строки 'zzz'.
+let str = 'abcdfghj';
+testFunction=(arr)=>{
+	if( arr.substr(0,3)==='abc' ){
+	arr=arr.replace('abc','www')
+	
+		}
+else
+		arr+='zzz'
+	
+	
+		return arr
+
+}
+console.log(testFunction(str))
