@@ -1,0 +1,15 @@
+//Отфильтровать коллекцию, где у свойства есть хоть
+//какое-то значение
+let obj = [
+{name: 'test', age: 34, country: 'RF'},
+{name: '', age: null, country: ''},
+{name: 'test1', age: null, country: ''},
+{name: '', age: 12, country: ''},
+{name: '', age: null, country: 'RF'}
+]
+testFunction=(arr)=>{
+return arr.filter(elem=>
+	elem.name!==''||elem.age!==null || elem.country!=='')
+	
+}
+console.log(testFunction(obj))
