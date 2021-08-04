@@ -1,0 +1,15 @@
+//Реализуйте функцию, которая принимает на вход массив и число,
+//которое задает размер чанка (куска). 
+//Функция должна вернуть массив, 
+//состоящий из чанков указанной размерности.
+
+
+inputArray = ['a','b','c','d','e']
+testFunction=(arr,perChunk)=>{
+return arr.reduce((all,one,i) => {
+   const ch = Math.floor(i/perChunk); 
+   all[ch] = [].concat((all[ch]||[]),one); 
+   return all
+}, [])
+}
+console.log(testFunction(inputArray,2))
