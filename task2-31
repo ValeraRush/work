@@ -1,0 +1,22 @@
+//Напишите функцию, которая преобразует массив вида
+//let arr = [{name: 'width', value: 300},
+// {name: 'height', value: 100}];
+//в объект let obj = {width:300, height: 100};
+//Количество объектов в массиве неограниченно.
+
+let arr = 
+	[
+{name: 'width', value: 300},
+{name: 'height', value: 100}
+	]
+testFunction=(arr)=>{
+let newArr=[]
+	arr.forEach(elem=>{
+newArr.push('{'+elem.name+':'+elem.value+'}')
+		
+	})
+	return newArr
+	
+
+}
+console.log(testFunction(arr))
