@@ -1,0 +1,17 @@
+//Строка состоит из слов, разделенных одним 
+//или несколькими пробелами.
+//Найдите слово наибольшей длины.
+let str = 'text education exceed.team part 2 for test'
+function longest(str) {
+    if(typeof str !== 'string') return '';
+    let words = str.split(' ');
+    let longest = '';
+
+    for (let i = 0; i < words.length; i++) {
+      if (words[i].length > longest.length) {
+        longest = words[i];
+      }
+    }
+    return longest;
+}
+console.log(longest(str))
