@@ -1,0 +1,13 @@
+//Дана строка. Заменить все символы 'a' и 'b' на
+//'A' и 'B' соответственно.
+let str = 'abcetgbabctest'
+testFunction=(arr)=>{
+	let reA=/a/g
+	let reB=/b/g
+arr=arr.replace(reA,'A')
+arr=arr.replace(reB,'B')
+	return arr
+	
+	
+}
+console.log(testFunction(str))
