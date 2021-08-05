@@ -1,0 +1,43 @@
+//1 января 2018 был понедельник. Скрипт запрашивает номер месяца (1..12) 
+// и число в этом месяце (1..31). Выведите имя дня недели (например, «четверг»)
+// для введённого числа и месяца.
+const YEAR = 2018;
+let getDayName = () => {
+    month = 1
+    day = 5
+
+    if ((month || day) === null) {
+        return
+    }
+
+    let date = new Date(YEAR, parseFloat(month) - 1, parseFloat(day));
+
+    switch (date.getDay()) {
+        case 0:
+            console.log('Воскресенье');
+            break;
+        case 1:
+            console.log('Понедельник');
+            break;
+        case 2:
+            console.log('Вторник');
+            break;
+        case 3:
+            console.log('Среда');
+            break;
+        case 4:
+            console.log('Четверг');
+            break;
+        case 5:
+            console.log('Пятница');
+            break;
+        case 6:
+            console.log('Суббота');
+            break;
+        default:
+            console.log('Неверная дата');
+    }
+};
+console.log(getDayName())
+
+ 
