@@ -1,0 +1,109 @@
+//Создать блок по макету Picture 3.png
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<div class="first">
+    <h1 class="second">Login Page </h1>
+    <div>
+        <div class="five">
+            <p class="third">
+                Email:
+            </p>
+            <input type="text">
+        </div>
+        <div class="five">
+            <p class="third">
+                Password:
+            </p>
+            <input type="text">
+        </div>
+    </div>
+    <div class="four">
+        <p class="six">
+Forgot password?
+        </p>
+        <button>Login</button>
+    </div>
+
+
+</div>
+
+
+<style>
+    body
+    {
+        font-family: sans-serif;
+    }
+
+
+    .first
+    {
+        background: #a2bccc;
+        border-radius: 5px;
+        padding: 30px;
+        justify-content: center;
+
+
+    }
+
+.second
+{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 20;
+
+
+}
+.third
+{
+    margin: 5px 0;
+}
+
+.four
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.five
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.six
+{
+    color: gray;
+    font-size: 90%;
+}
+button
+{
+  background: #8296a3;
+    border-radius: 5px;
+    border: 0;
+    width: 70px;
+    height: 30px;
+
+}
+input
+{
+    border-radius: 5px;
+    border: 0;
+    height: 25px;
+}
+</style>
+</body>
+</html>
