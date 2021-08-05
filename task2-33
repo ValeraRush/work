@@ -1,0 +1,36 @@
+//Реализуйте функцию, которая параметром принимает строку. Выведите сформированный объект из параметров строки браузера.
+let str='https://underscorejs.org/?a=4&b=8'
+testFunction=(arr)=>{
+    let sKey=-1
+    let sValue=-1
+    let key=''
+    let value=''
+    let newArr=[]
+    for (let i = 0; i <= arr.length; i++) {
+        let ss = (arr.substring(i,i+1))
+
+        if(ss==='?'||ss==='&'||i===arr.length||ss==='='){
+            
+            if(sKey===-1){
+                sKey=i+1
+
+            }
+            else{
+                if(sValue===-1){
+                    sValue=i+1
+                    key=arr.substring(sKey,i)
+                    
+                }
+                else{
+                    value=arr.substring(sValue,i)
+                    newArr.push(key+':'+value)
+                    sKey=i+1
+                    sValue=-1
+                }
+            }
+        }
+
+    }
+    return newArr
+}
+console.log(testFunction(str))
