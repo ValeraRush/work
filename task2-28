@@ -1,0 +1,14 @@
+//Из объекта сформировать 2 массива ключи, значения
+let str ={
+name: 'test',
+age: 34,
+country: 'RF'
+}
+testFunction=(arr)=>{
+let name=Object.values(arr)
+let key = Object.keys(arr)
+	
+	
+	console.log(name,key)
+}
+console.log(testFunction(str))
