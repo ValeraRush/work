@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Батарейка</title>
+
+</head>
+<body>
+<div class="a"></div>
+<div class="b"></div>
+<div class="c"></div>
+<style>
+    div{
+        width: 150px; height: 50px;
+        border: solid 4px;
+        margin-bottom: 10px;
+        position: relative;
+
+    }
+    div::after{
+        content: "";
+        width: 10px;
+        height: 20px;
+        background: #000000;
+        position: absolute;
+        left: 150px; bottom: 15px;
+        
+    }
+    .c{background: green;}
+    .a{background: linear-gradient(to right, red 50px, #ffffff 51px);}
+    .b{background: linear-gradient(to right, #f8bf05 100px, #fff 101px);}
+</style>
+</body>
+</html>
