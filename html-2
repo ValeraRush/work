@@ -5,7 +5,7 @@
     <title>Прогресс</title>
     <style>
         .progress {
-            background: -webkit-linear-gradient(top, #333, #999); /* Chrome 10+,Safari 5.1+ */
+            background: -webkit-linear-gradient(top, #333, #999); 
             border: 1px solid #333;
             height: 20px;
             border-radius: 10px;
